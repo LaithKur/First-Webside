@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tiere-Meme</title>
+  </head>
+  <head>
+    <script src="Hamburger-menu-Tiere-Meme.js"></script>
+  </head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قائمة هامبرغر</title>
+    <link rel="stylesheet" href="Tiere-Meme.css">
+</head>
+<body>
+    <!-- زر الهامبرغر -->
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <!-- القائمة الجانبية -->
+    <nav id="menu" class="menu">
+        <ul>
+            <li><a href="index.html">Homebage</a></li>
+            <li><a href="Tiere-Meme.html">Tiere Meme</a></li>
+            
+        </ul>
+    </nav>
+
+    <script>
+        // عند النقر على الهامبرغر لفتح وإغلاق القائمة
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('open');
+        }
+
+        // إغلاق القائمة عند النقر على أي رابط داخل القائمة
+        var menuLinks = document.querySelectorAll('.menu a');
+        menuLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                // لا نستخدم event.preventDefault() هنا لأننا نريد أن ننتقل إلى الرابط.
+                document.getElementById('menu').classList.remove('open');
+            });
+        });
+
+        // إغلاق القائمة عند النقر في أي مكان آخر على الصفحة
+        document.addEventListener('click', function(event) {
+            var menu = document.getElementById('menu');
+            var hamburger = document.querySelector('.hamburger-menu');
+            
+            // إذا تم النقر خارج القائمة ورمز الهامبرغر، أغلق القائمة
+            if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+                menu.classList.remove('open');
+            }
+        });
+    </script>
+</body>
+
+<head>
+    <title>Tiere-Meme</title>
+  </head>
+  <h1>Tiere-Meme</h1>
+  <video id="video1" src="https://media.greenscreenmemes.com/2024/09/huh-cat.mp4" width="300"
+         height="auto" controls>
+  </video>
+  <video id="video2" src="https://media.greenscreenmemes.com/2024/05/Cat-jumps-high-from-the-horn-meme.mp4" width="300" height="190" controls>
+  </video>
+</html>
