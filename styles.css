@@ -34,7 +34,7 @@ body{
       position: fixed;
       z-index:10;
       top: 0;
-      left: -25vw;  /* اجعل القائمة مخفية في البداية */
+      left: -250px;  /* اجعل القائمة مخفية في البداية */
       width: 250px;
       height: 100%;
       background-color: #333;
