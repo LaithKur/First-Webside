@@ -16,7 +16,7 @@ body{
       width: 60px;
       height: 50px;
       cursor: pointer;
-      transform:translate(5vw, 21vh);
+      transform:translate(100px, 80px);
       z-index:2;
       position: absolute;
       
@@ -75,17 +75,17 @@ body{
   h1{
     z-index:8;
     text-align: center;
-    transform: translate(0vw, -45vh);
+    transform: translate(0, -140px);
     color:white;
   }
   #hr-1{
      height: 50px; 
      background-color: red;
-     width:200px;
+     width:250px;
   }
   #h2-1{
     text-align: center;
-    transform: translate(0, -4vw);
+    transform: translate(0, -60px);
     color:white;
   }
   
@@ -119,4 +119,4 @@ body{
   top: auto px;
   left:71%;
   width:20vw;
-  height: auto;}  
+  height: auto;}
