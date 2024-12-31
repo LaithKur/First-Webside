@@ -4,46 +4,10 @@ body{
   body{
    font-size: clamp(0.5rem, 1.25vw, 1rem);
   }
-  hr{
-    height:250px;
-    width: auto;
-    background-color: red;
-    z-index:0;
-  }
   h1{
-    text-align: center;
-    transform: translate(0, -100vh);
-    color: white;
-    font-size:80px;
+   font-size: clamp(1rem, 2.5vw, 2rem);
   }
-  #a-1{
-    position: relative;
-    top:-110vh;
-    left:10vw;
-    z-index:3;
-    font-size:30px;
-    color:white;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-  #a-1:hover{
-    text-decoration:underline;
-    color:blue;
-  }
-  #a-2{
-    position: relative;
-    top:-110vh;
-    left:15vw;
-    font-size:30px;
-    color:white;
-    text-decoration:none;
-    transition:all 0.3s ease;
-    z-index:3;
-  }
-  #a-2:hover{
-    text-decoration: underline;
-    color:blue;
-  }
+  
   /* تنسيق الهامبرغر */
   .hamburger-menu {
       display: flex;
@@ -99,4 +63,65 @@ body{
   
   /* عند فتح القائمة */
   .menu.open {
-      left: 0;  /* يظهر القائمة عند النقر */}
+      left: 0;  /* يظهر القائمة عند النقر */ 
+  }
+  hr{
+     height: 200px; 
+     background-color: red;
+     width: auto;
+     transform: translate(0,0);
+     z-index:1;
+  }
+  h1{
+    z-index:8;
+    text-align: center;
+    transform: translate(0, -140px);
+    color:white;
+  }
+  #hr-1{
+     height: 50px; 
+     background-color: red;
+     width:250px;
+  }
+  #h2-1{
+    text-align: center;
+    transform: translate(0, -60px);
+    color:white;
+  }
+  
+  #video1{ width: 20vw;
+           height: auto;
+           margin:2%;}
+  #h2-2 { text-align: center;}
+  #h2-2 { 
+  text-decoration: underline;
+  text-decoration-color:  red ;
+  }
+  
+  #h2-3 { text-align: center;
+  }
+  #video2{ position: absolute;
+  top: auto px;
+  left:2%;
+  width:20vw;
+  height: auto;}
+  #video3{  position: absolute;
+  top: auto px;
+  left:25%;
+  width:20vw;
+  height: auto;}
+  #video4{  position: absolute;
+  top: auto px;
+  left:48%;
+  width:20vw;
+  height: auto;}
+  #video5{ position: absolute;
+  top: auto px;
+  left:71%;
+  width:20vw;
+  height: auto;}
+  
+  
+  
+  
+   
