@@ -9,7 +9,7 @@ body{
   }
   
   hr{
-    height:100vh;
+    height:250px;
     width: auto;
     background-color: red;
     z-index:0;
